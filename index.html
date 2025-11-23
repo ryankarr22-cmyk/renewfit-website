@@ -12,8 +12,15 @@
             font-family: 'Inter', sans-serif;
             background-color: #f7f7f7; /* Light background for contrast */
             scroll-behavior: smooth;
+            /* --- NEW: Background Watermark Logo --- */
+        background-image: url('Logo.jpg');
+        background-size: 80%; /* Adjust size as needed, e.g., 50% for smaller */
+        background-repeat: no-repeat;
+        background-position: center top 30%; /* Center horizontally, 30% down */
+        opacity: 0.95; /* Keep background light and readable */
         }
         /* Custom color palette for RenewFit (Teal/Blue) */
+    
         .color-primary { background-color: #0F766E; } /* Dark Teal */
         .text-primary { color: #0F766E; }
         .border-primary { border-color: #0F766E; }
@@ -26,8 +33,8 @@
         <!-- Header & Navigation --><header class="bg-white shadow-md z-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
                 <!-- LOGO INTEGRATION: For the main page --><div class="flex items-center">
-                    <img src="https://ryankarr22-cmyk.github.io/renewfit-website/Logo.png" alt="RenewFit Logo" class="h-10"> 
-                </div>
+    <!-- Logo now in background -->
+</div>
                 <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
                     <!-- LINKS: Using your actual GitHub Pages URL --><a href="https://ryankarr22-cmyk.github.io/renewfit-website/mission.html" class="hover:text-primary transition duration-300">Our Mission</a>
                     <a href="https://ryankarr22-cmyk.github.io/renewfit-website/protocols.html" class="hover:text-primary transition duration-300">The Protocols</a>
@@ -165,5 +172,6 @@
 
 </body>
 </html>
+
 
 
